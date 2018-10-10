@@ -18,32 +18,34 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
         <Router>
-          <Switch>
-            <Redirect exact from="/" to="/home" />
-            <Route
-              path="/bio"
-              component={Bio}
-            />
-            <Route
-              path="/home"
-              component={Home}
-            />
-            <Route
-              path="/portfolio"
-              component={Portfolio}
-            />
-            <Route
-              path="/resume"
-              component={Resume}
-            />
-            <Route
-              path="/contact"
-              component={Contact}
-            />
-            <Route render={() => <h1>404</h1>} />
-          </Switch>
+          <div>
+            <Header />
+            <Switch>
+              <Redirect exact from="/" to="/home" />
+              <Route
+                path="/bio"
+                component={Bio}
+              />
+              <Route
+                path="/home"
+                component={Home}
+              />
+              <Route
+                path="/portfolio"
+                component={Portfolio}
+              />
+              <Route
+                path="/resume"
+                component={Resume}
+              />
+              <Route
+                path="/contact"
+                component={Contact}
+              />
+              <Route render={() => <h1>404</h1>} />
+            </Switch>
+          </div>
         </Router>
         <Footer />
       </div>

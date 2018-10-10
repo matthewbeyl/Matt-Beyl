@@ -1,7 +1,19 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
+
+const BioLink = props => <Link to="/bio" {...props} />
+const PortfolioLink = props => <Link to="/portfolio" {...props} />
+const ResumeLink = props => <Link to="/resume" {...props} />
+const ContactLink = props => <Link to="/contact" {...props} />
+
+const styles = theme => ({
+    
+})
 
 class Header extends Component {
 
@@ -10,10 +22,10 @@ class Header extends Component {
             <div>
                 <AppBar>
                     <Toolbar>
-                        <Button color="inherit">Bio</Button>
-                        <Button color="inherit">Portfolio</Button>
-                        <Button color="inherit">Resume</Button>
-                        <Button color="inherit">Contact</Button>
+                        <Button component={BioLink} color="inherit">Bio</Button>
+                        <Button component={PortfolioLink} color="inherit">Portfolio</Button>
+                        <Button component={ResumeLink} color="inherit">Resume</Button>
+                        <Button component={ContactLink} color="inherit">Contact</Button>
                     </Toolbar>
                 </AppBar>
             </div>
@@ -21,4 +33,5 @@ class Header extends Component {
     }
 }
 
-export default Header;
+const StyledHeader = withStyles(styles)(Header);
+export default StyledHeader;
