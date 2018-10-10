@@ -24,7 +24,10 @@ class Resume extends Component {
         let { classes } = this.props
         return (
             <div className={classes.resume}>
-                <Typography variant="title" color="inherit">
+                <Typography variant="title" color="primary">
+                    TECHNICAL SKILLS
+                </Typography>
+                <Typography variant="title" color="primary">
                     PROFESSIONAL EXPERIENCE
                 </Typography>
                 <br/>
@@ -139,7 +142,7 @@ class Resume extends Component {
                     </ul>
                 </Typography>
                 <br/>
-                <Typography variant="title" color="inherit">
+                <Typography variant="title" color="primary">
                     EDUCATION
                 </Typography>
                 <br/>
@@ -169,7 +172,7 @@ class Resume extends Component {
                         </li>
                     </ul>
                 </Typography>
-                <Typography variant="title" color="inherit">      
+                <Typography variant="title" color="primary">      
                     LEADERSHIP & ACTIVITIES
                 </Typography>
                 <Typography>
