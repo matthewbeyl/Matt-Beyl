@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 
 import { Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-// import List from '@material-ui/core/List';
-// import ListItem from '@material-ui/core/ListItem';
-// import ListItemText from '@material-ui/core/ListItemText';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCss3Alt, faGit, faGitSquare, faHtml5, faJs, faJsSquare, faNode, faNodeJs, faNpm, faReact } from '@fortawesome/free-brands-svg-icons'
+
+
 
 
 const styles = theme => ({
@@ -13,9 +15,19 @@ const styles = theme => ({
         marginTop: 100,
         marginLeft: 45,
         marginRight: 45,
+        marginBottom: 45,
     },
     subBullet: {
         listStyle: 'none',
+    },
+    icon: {
+        padding: 40,
+    },
+    techSkills: {
+        display: 'flex',
+        minWidth: '100%',
+        maxWidth: 'auto',
+        overflowX: 'auto',
     }
 })
 
@@ -27,10 +39,22 @@ class Resume extends Component {
                 <Typography variant="title" color="primary">
                     TECHNICAL SKILLS
                 </Typography>
+                <div className={classes.techSkills}>
+                    <FontAwesomeIcon className={classes.icon} icon={faCss3Alt} size="6x" />
+                    <FontAwesomeIcon className={classes.icon} icon={faGit} size="6x" />
+                    {/* <FontAwesomeIcon className={classes.icon} icon={faGitSquare} size="6x"/> */}
+                    <FontAwesomeIcon className={classes.icon} icon={faHtml5} size="6x" />
+                    <FontAwesomeIcon className={classes.icon} icon={faJs} size="6x" />
+                    {/* <FontAwesomeIcon className={classes.icon} icon={faJsSquare} size="6x"/> */}
+                    {/* <FontAwesomeIcon className={classes.icon} icon={faNode} size="6x"/> */}
+                    <FontAwesomeIcon className={classes.icon} icon={faNodeJs} size="6x" />
+                    <FontAwesomeIcon className={classes.icon} icon={faNpm} size="6x" />
+                    <FontAwesomeIcon className={classes.icon} icon={faReact} size="6x" />
+                </div>
                 <Typography variant="title" color="primary">
                     PROFESSIONAL EXPERIENCE
                 </Typography>
-                <br/>
+                <br />
                 <Typography variant="subheading" color="inherit">
                     Prime Digital Academy • Full Stack Software Engineering Student
                 </Typography>
@@ -86,7 +110,7 @@ class Resume extends Component {
                 </Typography>
                 <Typography variant="subheading" color="inherit">
                     Indeed Brewing Company • Production Assistant
-                </Typography> 
+                </Typography>
                 <Typography variant="body2" color="inherit">
                     Minneapolis, MN • March 2014 – June 2014
                 </Typography>
@@ -123,7 +147,7 @@ class Resume extends Component {
                     Papa Murphy’s • Assistant Store Manager
                 </Typography>
                 <Typography variant="body2" color="inherit">
-                    Vadnais Heights, MN • 2006 – 2009 and 2011 –  2012  
+                    Vadnais Heights, MN • 2006 – 2009 and 2011 –  2012
                 </Typography>
                 <Typography>
                     <ul>
@@ -141,11 +165,11 @@ class Resume extends Component {
                         </li>
                     </ul>
                 </Typography>
-                <br/>
+                <br />
                 <Typography variant="title" color="primary">
                     EDUCATION
                 </Typography>
-                <br/>
+                <br />
                 <Typography variant="subheading" color="inherit">
                     Prime Digital Academy
                 </Typography>
@@ -172,15 +196,45 @@ class Resume extends Component {
                         </li>
                     </ul>
                 </Typography>
-                <Typography variant="title" color="primary">      
+                <br />
+                <Typography variant="title" color="primary">
                     LEADERSHIP & ACTIVITIES
                 </Typography>
-                <Typography>
-                    Minnedemo 29 • Attendee			                                                                                 St. Paul, MN • July 2018
-      White Bear Lake Lacrosse Club • Head Coach             White Bear Lake, MN • May 2011 – Aug 2011,  May 2012 – Aug 2012
-      Hudson Area Lacrosse Association • Head Coach                                                         Hudson, WI • May 2010 – Aug 2010
-      UW-River Falls Men’s Lacrosse Club • Coach/Captain		                                 River Falls, WI • Sept 2008 – June 2011
-Regional Lacrosse Presentation for The Sports Authority • Keynote Speaker			       Oakdale, MN • 2009</Typography>
+                <br />
+                <Typography variant="subheading">
+                    Minnedemo 29 • Attendee
+                </Typography>
+                <Typography variant="body2">
+                    St. Paul, MN • July 2018
+                </Typography>
+                <br />
+                <Typography variant="subheading">
+                    White Bear Lake Lacrosse Club • Head Coach
+                </Typography>
+                <Typography variant="body2">
+                    White Bear Lake, MN • May 2011 – Aug 2011,  May 2012 – Aug 2012
+                </Typography>
+                <br />
+                <Typography variant="subheading">
+                    Hudson Area Lacrosse Association • Head Coach
+                </Typography>
+                <Typography variant="body2">
+                    Hudson, WI • May 2010 – Aug 2010
+                </Typography>
+                <br />
+                <Typography variant="subheading">
+                    UW-River Falls Men’s Lacrosse Club • Coach/Captain
+                </Typography>
+                <Typography variant="body2">
+                    River Falls, WI • Sept 2008 – June 2011
+                </Typography>
+                <br />
+                <Typography variant="subheading">
+                    Regional Lacrosse Presentation for The Sports Authority • Keynote Speaker
+                </Typography>
+                <Typography variant="body2">
+                    Oakdale, MN • 2009
+                </Typography>
             </div>
         );
     }
