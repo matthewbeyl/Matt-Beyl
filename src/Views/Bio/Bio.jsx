@@ -6,6 +6,11 @@ const styles = theme => ({
     bio: {
         marginTop: 100,
         marginLeft: 10,
+    },
+    headshot: {
+        borderRadius: '50%',
+        display: 'grid',
+        position: 'center',        
     }
 })
 
@@ -14,7 +19,7 @@ class Bio extends Component {
       let { classes } = this.props
     return (
       <div className={classes.bio}>
-          <Typography variant="title" color="inherit">Bio</Typography>
+        <img className={classes.headshot} src="headshot.png" alt="" height="300px" />
       </div>
     );
   }

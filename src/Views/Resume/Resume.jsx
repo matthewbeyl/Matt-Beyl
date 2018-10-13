@@ -5,7 +5,7 @@ import { Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCss3Alt, faGit, faGitSquare, faHtml5, faJs, faJsSquare, faNode, faNodeJs, faNpm, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faCss3Alt, faGit, faHtml5, faJs, faNodeJs, faNpm, faReact } from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -42,11 +42,8 @@ class Resume extends Component {
                 <div className={classes.techSkills}>
                     <FontAwesomeIcon className={classes.icon} icon={faCss3Alt} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faGit} size="6x" />
-                    {/* <FontAwesomeIcon className={classes.icon} icon={faGitSquare} size="6x"/> */}
                     <FontAwesomeIcon className={classes.icon} icon={faHtml5} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faJs} size="6x" />
-                    {/* <FontAwesomeIcon className={classes.icon} icon={faJsSquare} size="6x"/> */}
-                    {/* <FontAwesomeIcon className={classes.icon} icon={faNode} size="6x"/> */}
                     <FontAwesomeIcon className={classes.icon} icon={faNodeJs} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faNpm} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faReact} size="6x" />
