@@ -5,7 +5,9 @@ import { withStyles } from '@material-ui/core/styles';
 const styles = theme => ({
     portfolio: {
         marginTop: 100,
-        marginLeft: 10,
+        marginLeft: 45,
+        marginRight: 45,
+        marginBottom: 45,
     }
 })
 

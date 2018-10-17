@@ -41,9 +41,10 @@ class Resume extends Component {
                 </Typography>
                 <div className={classes.techSkills}>
                     <FontAwesomeIcon className={classes.icon} icon={faCss3Alt} size="6x" />
-                    <FontAwesomeIcon className={classes.icon} icon={faGit} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faHtml5} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faJs} size="6x" />
+
+                    <FontAwesomeIcon className={classes.icon} icon={faGit} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faNodeJs} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faNpm} size="6x" />
                     <FontAwesomeIcon className={classes.icon} icon={faReact} size="6x" />
