@@ -19,6 +19,10 @@ class Contact extends Component {
     return (
       <div className={classes.contact}>
         <form>
+            <Typography variant="subheading">
+                Thanks for stopping by.  If you would like to grab coffee, collaborate on a project, or give me a job, please fill out the form below
+                and I will get back to you promptly.
+            </Typography>
             <TextField label="Name"/>
             <br/>
             <TextField label="E-mail"/>
