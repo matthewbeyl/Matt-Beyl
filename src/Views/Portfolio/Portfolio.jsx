@@ -10,7 +10,7 @@ const styles = theme => ({
         marginBottom: 45,
     },
     projects: {
-        backgroundColor: '#f9f9f9',
+        backgroundColor: '#dddddd',
         display: 'flex',
         minWidth: '100%',
         maxWidth: 'auto',
