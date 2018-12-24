@@ -16,8 +16,8 @@ const styles = theme => ({
         marginRight: 'auto', 
     },
     paragraph: {
-      marginLeft: 45,
-      marginRight: 45,
+      marginLeft: '20%',
+      marginRight: '20%',
       marginTop: 45,
     }
 })
